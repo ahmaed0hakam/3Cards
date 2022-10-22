@@ -1,0 +1,104 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: auto;
+  min-width: 921.6px;
+}
+.card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  row-gap: 30px;
+
+}
+#card1{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+#card2{
+  background-color: hsl(184, 100%, 22%);
+}
+#card3{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+img {
+  width: 50px;
+}
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+h1,p {
+  color: white;
+  line-height: 1.5;
+}
+button {
+  width: 60%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight:100;
+  cursor: pointer;
+  border: white solid 2px;
+}
+#card1 button {
+  color: hsl(31, 77%, 52%);
+}
+#card2 button {
+  color: hsl(184, 100%, 22%);
+}
+#card3 button {
+  color: hsl(179, 100%, 13%);
+}
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight:100;
+}
+#card1 button:hover,#card2 button:hover, #card3 button:hover{
+  background-color: none;
+  background-color: transparent;
+  color: white;
+}
+@media only screen and (max-width:928px) {
+  .cards {
+    flex-direction: column;
+    width: auto;
+    min-width: auto;
+    margin: 20px auto;
+    align-items: center;
+
+  }
+  .card {
+    width: 80%;
+  }
+  body {
+    height: auto;
+  }
+  #card1 {
+    border-radius: 10px 10px 0 0;
+  }
+  #card3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
